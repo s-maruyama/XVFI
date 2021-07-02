@@ -7,7 +7,6 @@ import pandas as pd
 import torch.nn.functional as F
 from datetime import datetime
 from torch.nn import init
-from skimage.measure import compare_ssim
 from skimage.metrics import structural_similarity
 from torch.autograd import Variable
 from torchvision import models
