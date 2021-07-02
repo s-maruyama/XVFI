@@ -192,6 +192,8 @@ def make_2D_dataset_X_Train(dir):
             frame65_list = []
             for frame in sorted(glob.glob(os.path.join(sample_path, '*.png'))):
                 frame65_list.append(frame)
+            if frame65_list == []:
+                continue
             framesPath.append(frame65_list)
 
     print("The number of total training samples : {} which has 65 frames each.".format(
